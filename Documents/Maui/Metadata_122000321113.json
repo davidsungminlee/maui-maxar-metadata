@@ -234,7 +234,7 @@
             "roles": [
                 "data"
             ],
-            "raster:band": [
+            "raster:bands": [
                 {
                     "data_type": "uint16"
                 }
@@ -274,7 +274,7 @@
             "roles": [
                 "data"
             ],
-            "raster:band": [
+            "raster:bands": [
                 {
                     "data_type": "uint16"
                 }
@@ -325,7 +325,7 @@
             "roles": [
                 "visual"
             ],
-            "raster:band": [
+            "raster:bands": [
                 {
                     "data_type": "uint16"
                 }
