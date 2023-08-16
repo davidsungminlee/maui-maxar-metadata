@@ -1,0 +1,272 @@
+{
+    "type": "Feature",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/view/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/grid/v1.0.0/schema.json"
+    ],
+    "id": "4/122000331202/105001003590C300",
+    "properties": {
+        "datetime": "2023-08-12 21:18:17Z",
+        "platform": "GE01",
+        "gsd": 0.51,
+        "ard_metadata_version": "0.0.1",
+        "catalog_id": "105001003590C300",
+        "utm_zone": 4,
+        "quadkey": "122000331202",
+        "view:off_nadir": 27.2,
+        "view:azimuth": 302.7,
+        "view:incidence_angle": 59.6,
+        "view:sun_azimuth": 105.7,
+        "view:sun_elevation": 71.9,
+        "proj:epsg": 32604,
+        "proj:geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [
+                        779843.75,
+                        2295156.25
+                    ],
+                    [
+                        784448.5672894627,
+                        2295156.25
+                    ],
+                    [
+                        784460.6325890874,
+                        2293576.0929617486
+                    ],
+                    [
+                        779843.75,
+                        2293576.340159511
+                    ],
+                    [
+                        779843.75,
+                        2295156.25
+                    ]
+                ]
+            ]
+        },
+        "grid:code": "MXRA-Z4-122000331202",
+        "proj:bbox": [
+            779843.75,
+            2293576.0929617486,
+            784460.6325890874,
+            2295156.25
+        ],
+        "tile:data_area": 7.2,
+        "tile:clouds_area": 1.6,
+        "tile:clouds_percent": 22
+    },
+    "bbox": [
+        -156.31306083725306,
+        20.720147,
+        -156.2686280522603,
+        20.735107058985108
+    ],
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -156.3128088476386,
+                    20.735107058985108
+                ],
+                [
+                    -156.2686280522603,
+                    20.734409849241207
+                ],
+                [
+                    -156.268769,
+                    20.720147
+                ],
+                [
+                    -156.31306083725306,
+                    20.720827472923865
+                ],
+                [
+                    -156.3128088476386,
+                    20.735107058985108
+                ]
+            ]
+        ]
+    },
+    "links": [
+        {
+            "rel": "collection",
+            "href": "../../../acquisition_collections/105001003590C300_collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../../../acquisition_collections/105001003590C300_collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "../../../order_collections/6252269831086136329_root_collection.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "data-mask": {
+            "type": "application/geopackage+sqlite3",
+            "title": "Data Mask",
+            "href": "./105001003590C300-data-mask.gpkg",
+            "roles": [
+                "data-mask"
+            ]
+        },
+        "ms_analytic": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Multispectral Image",
+            "href": "https://maxar-opendata.s3.amazonaws.com/events/Maui-Hawaii-fires-Aug-23/ard/04/122000331202/2023-08-12/105001003590C300-ms.tif",
+            "proj:bbox": [
+                779843.75,
+                2289843.75,
+                785156.25,
+                2295156.25
+            ],
+            "proj:shape": [
+                2743,
+                2743
+            ],
+            "proj:transform": [
+                1.9367480860371855,
+                0.0,
+                779843.75,
+                0.0,
+                -1.9367480860371855,
+                2295156.25,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "eo:bands": [
+                {
+                    "name": "BAND_B",
+                    "common_name": "blue",
+                    "description": "Blue"
+                },
+                {
+                    "name": "BAND_G",
+                    "common_name": "green",
+                    "description": "Green"
+                },
+                {
+                    "name": "BAND_R",
+                    "common_name": "red",
+                    "description": "Red"
+                },
+                {
+                    "name": "BAND_N",
+                    "common_name": "nir08",
+                    "description": "Near Infrared 1"
+                }
+            ],
+            "roles": [
+                "data"
+            ],
+            "raster:bands": [
+                {
+                    "data_type": "uint16"
+                }
+            ]
+        },
+        "pan_analytic": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Panchromatic Image",
+            "href": "https://maxar-opendata.s3.amazonaws.com/events/Maui-Hawaii-fires-Aug-23/ard/04/122000331202/2023-08-12/105001003590C300-pan.tif",
+            "proj:bbox": [
+                779843.75,
+                2289843.75,
+                785156.25,
+                2295156.25
+            ],
+            "proj:shape": [
+                10972,
+                10972
+            ],
+            "proj:transform": [
+                0.4841870215092964,
+                0.0,
+                779843.75,
+                0.0,
+                -0.4841870215092964,
+                2295156.25,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "eo:bands": [
+                {
+                    "name": "BAND_P",
+                    "description": "Pan"
+                }
+            ],
+            "roles": [
+                "data"
+            ],
+            "raster:bands": [
+                {
+                    "data_type": "uint16"
+                }
+            ]
+        },
+        "visual": {
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+            "title": "Visual Image",
+            "href": "https://maxar-opendata.s3.amazonaws.com/events/Maui-Hawaii-fires-Aug-23/ard/04/122000331202/2023-08-12/105001003590C300-visual.tif",
+            "proj:bbox": [
+                779843.75,
+                2289843.75,
+                785156.25,
+                2295156.25
+            ],
+            "proj:shape": [
+                17408,
+                17408
+            ],
+            "proj:transform": [
+                0.30517578125,
+                0.0,
+                779843.75,
+                0.0,
+                -0.30517578125,
+                2295156.25,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "eo:bands": [
+                {
+                    "name": "BAND_R",
+                    "common_name": "red",
+                    "description": "Red"
+                },
+                {
+                    "name": "BAND_G",
+                    "common_name": "green",
+                    "description": "Green"
+                },
+                {
+                    "name": "BAND_B",
+                    "common_name": "blue",
+                    "description": "Blue"
+                }
+            ],
+            "roles": [
+                "visual"
+            ],
+            "raster:bands": [
+                {
+                    "data_type": "uint16"
+                }
+            ]
+        }
+    },
+    "collection": "105001003590C300"
+}
